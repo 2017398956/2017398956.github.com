@@ -2,7 +2,7 @@ title: 2017398956.GitHub.com
 description: My online resume
 google_analytics: 
 show_downloads: true
-theme: jekyll-theme-hacker
+theme: jekyll-theme-cayman
 
 gems:
   - jekyll-mentions
