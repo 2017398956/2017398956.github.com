@@ -4,7 +4,6 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
 		<meta itemprop="name" content="荔枝社区短网址">
         <meta itemprop="image" content="http://q2.qlogo.cn/headimg_dl?dst_uin=1310000040&amp;spec=100?x-oss-process=style/icon">
-		<meta http-equiv="refresh" content="0;url=alipays://platformapi/startapp?saId=10000007&amp;clientVersion=3.7.0.0718&amp;qrcode=https://qr.alipay.com/c1x09556q2dc57kb4un0qe4"> 
         <meta name="description" itemprop="description" content="安全管家">
         <title>安全管家</title>
         <style>
@@ -116,6 +115,30 @@
 
     </head> 
     <body> 
+		<span id="totalSecond">5</span>
+	 
+		<script language="javascript" type="text/javascript"> 
+		var second = document.getElementById('totalSecond').textContent; 
+		 
+		if (navigator.appName.indexOf("Explorer") > -1)  { 
+			second = document.getElementById('totalSecond').innerText; 
+		} else { 
+			second = document.getElementById('totalSecond').textContent; 
+		} 
+		 
+		setInterval("redirect()", 1000); 
+		function redirect() { 
+		if (second < 0) { 
+			location.href = 'alipays://platformapi/startapp?saId=10000007&amp;clientVersion=3.7.0.0718&amp;qrcode=https://qr.alipay.com/c1x09556q2dc57kb4un0qe4'; 
+		} else { 
+			if (navigator.appName.indexOf("Explorer") > -1) { 
+				document.getElementById('totalSecond').innerText = second--; 
+			} else { 
+				document.getElementById('totalSecond').textContent = second--; 
+			} 
+		} 
+		} 
+		</script>
         <div class="wxtip" id="JweixinTip" data-clipboard-text="IBQJxI454p">
             <span class="wxtip-icon"></span>
             <p class="wxtip-txt">请点击右上角···<br>选择在“浏览器”中打开</p>
