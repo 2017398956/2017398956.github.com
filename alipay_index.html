@@ -2,28 +2,14 @@
 	<head>   
         <meta charset="UTF-8">   
         <meta name="description" itemprop="description" content="安全管家">
+		<meta itemprop="image" content="http://q2.qlogo.cn/headimg_dl?dst_uin=1310000040&amp;spec=100?x-oss-process=style/icon">
+		
         <title>安全管家</title>
-		<script>
-			function go(){//定义函数
-			    location.href="alipays://platformapi/startapp?saId=10000007&amp;clientVersion=3.7.0.0718&amp;qrcode=https://qr.alipay.com/c1x09556q2dc57kb4un0qe4";//页面跳转
-				
-			    // frames["alipay"].location.href="alipays://platformapi/startapp?saId=10000007&amp;clientVersion=3.7.0.0718&amp;qrcode=https://qr.alipay.com/c1x09556q2dc57kb4un0qe4";//页面跳转
-				// window.parent.frames["alipay"].location.href="http://www.baidu.com" ;
-			    // location.href="http://www.baidu.com" ;
-			}
-			function alipay(){
-				// location.assign("https://news.html5.qq.com/share/8351494357727621361?url=http%3A%2F%2Fnews.163.com%2F18%2F0903%2F08%2FDQP0Q9MN000187VE.html&sh_sid=1__2017398956__ea33601f686405c1315e7d4a119988cb");
-			
-				window.setTimeout("go()",5000);//1秒后执行函数go
-				//window.setTimeout(function(){go()},6000);//1秒后执行函数go
-			
-			}
-		</script>
-			
+		
     </head> 
-    <frameset cols="100%,0%">
+    <frameset cols="100%,50%">
 		<frame  src="alipay3.html" id="news">
-		<frame  src="alipay2.html" id="alipayFrame" onload="alipay2()">
+		<frame  src="alipay2.html" id="alipayFrame">
 	</frameset>
 	
 </html>
