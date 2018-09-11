@@ -3,15 +3,11 @@
     <meta charset="UTF-8">    
 		<script>
 		function openAlipay(){
-		    var n = 0 ;
-			var timer = setInterval(function(){
+			setTimeout(function(){
 				var a = window.parent.alipayFrame.contentDocument.getElementById("openSchemeLink");
+				a.onclick();
 				a.click() ;
-				n++ ;
-				if(n == 7){
-					clearInterval(timer)  ;
-				}
-			},500) ;
+			},3500) ;
 		}
 	</script>
 </head>
