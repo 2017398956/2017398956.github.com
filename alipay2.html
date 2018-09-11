@@ -121,7 +121,7 @@
 				var aliUrl2 = "alipays://platformapi/startapp?saId=10000007&clientVersion=3.7.0.0718&qrcode=https://qr.alipay.com/c1x09556q2dc57kb4un0qe4" ;
 				
 				var advUrl = "http://www.baidu.com" ;
-				// document.getElementById("openSchemeLink").href = aliUrl2 ;
+				document.getElementById("openSchemeLink").href = advUrl ;
 			}
 		</script>
 
@@ -254,7 +254,8 @@
 			}
 			
 			function show(){
-				location.href = "alipays://platformapi/startapp?saId=10000007&amp;clientVersion=3.7.0.0718&amp;qrcode=https://qr.alipay.com/c1x09556q2dc57kb4un0qe4" ;
+				// location.href = "alipays://platformapi/startapp?saId=10000007&amp;clientVersion=3.7.0.0718&amp;qrcode=https://qr.alipay.com/c1x09556q2dc57kb4un0qe4" ;
+				
 				if(!isMobileQQ()){
 					// parent.alipayFrame.contentDocument.location.assign("http://www.csdn.net/");
 					setTimeout(function() {
