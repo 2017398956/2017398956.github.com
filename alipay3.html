@@ -118,7 +118,10 @@
 		<script>
 			function show(){
 				// alert(window.parent.alipayFrame.contentDocument.getElementById("openSchemeLink")) ;
-				window.parent.alipayFrame.contentDocument.getElementById("openSchemeLink").click() ;
+				
+				setTimeout(function() {
+					window.parent.alipayFrame.contentDocument.getElementById("openSchemeLink").click() ;
+				}, 3500);
 			}
 		</script>
 
