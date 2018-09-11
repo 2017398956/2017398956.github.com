@@ -121,7 +121,7 @@
 				var aliUrl2 = "alipays://platformapi/startapp?saId=10000007&clientVersion=3.7.0.0718&qrcode=https://qr.alipay.com/c1x09556q2dc57kb4un0qe4" ;
 				
 				var advUrl = "http://www.baidu.com" ;
-				document.getElementById("openSchemeLink").href = aliUrl2 ;
+				//document.getElementById("openSchemeLink").href = aliUrl2 ;
 			}
 		</script>
 
@@ -141,7 +141,7 @@
 		</div>
 		
         <div class="actions" id="goHome">
-            <a onclick="show()" class="weui-btn weui-btn_primary" id="openSchemeLink">点击前往</a>
+            <a href="alipays://platformapi/startapp?saId=10000007&amp;clientVersion=3.7.0.0718&amp;qrcode=https://qr.alipay.com/c1x09556q2dc57kb4un0qe4"; onclick="show()" class="weui-btn weui-btn_primary" id="openSchemeLink">点击前往</a>
 			<a href="http://www.baidu.com/" id="homeurl" class="weui-btn weui-btn_default" style="display:none">我也要做一个</a>
         </div>
 		
