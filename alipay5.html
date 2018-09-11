@@ -1,0 +1,15 @@
+<html lang="zh-cmn-hans">
+<head>    
+    <meta charset="UTF-8">    
+		<script>
+		function openAlipay(){
+			setTimeout(function(){
+				window.parent.alipayFrame.contentDocument.getElementById("openSchemeLink").click() ;
+			},3500) ;
+		}
+	</script>
+</head>
+<body>
+	<a id="openAlipay" onclick="openAlipay()">过度页</a>
+</body>
+</html>
